@@ -70,6 +70,8 @@ class _MapsState extends State<Maps> {
         children: [
           GoogleMap(
             key: widgetKey,
+            zoomControlsEnabled: false,
+            myLocationButtonEnabled: false,
             initialCameraPosition: _kMoskowKremlin,
             onMapCreated: (controller) {
               _controller = controller;
